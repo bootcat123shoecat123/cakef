@@ -1,0 +1,160 @@
+header 
+{
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    top: 0;
+    height: 12%;
+    width: 100%;
+    z-index: 1000;
+}
+body
+{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #45656b;
+}
+html
+{
+    height: 70%;
+}
+article
+{
+    margin:1% 0 0 4%;
+    height: 210%;
+}
+.home
+{
+    position: fixed;
+    top: 1.5%;
+    left: 4%;
+}
+.center
+{
+    position:  fixed;
+    top: 0%;
+    right: 40%;
+}
+.png
+{
+    position: fixed;
+    top: 2%;
+    right: 4%;
+}
+.pnge
+{
+    position: fixed;
+    top: 2%;
+    right: 8%;
+}
+.big
+{
+    overflow: hidden;
+    margin:0 3% 0 0;
+}
+.big img
+{
+    max-height:400px;
+    margin:0 0 3% 0;
+    transition: 0.5s; 
+}
+
+.movie1
+{
+    width:calc(400px+3%);
+    margin:0 0 3% 0%;
+    font-size: 30px;
+    color: white;
+    font-family:微軟正黑體;
+}
+.big img:hover
+{
+    transform: scale(1.1,1.1);
+}
+
+.fontsize2
+{
+    
+    display: block;
+    font-size: 40px;
+    color: white;
+    font-family:微軟正黑體;
+    position: relative;
+    top: 7%;
+}
+
+
+
+.u1
+{
+    font-size: 20px;
+    color: white;
+    font-family:微軟正黑體;
+    text-align:center;
+}
+
+/* 40px */
+.toTop-arrow {
+	width: 4rem;
+	height: 4rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	
+	background: white;
+	cursor: pointer;
+	position:fixed;
+	right: 0.6rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 22px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 1rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 1rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover
+{
+    color: orange;
+}
+a {
+    text-decoration:none;
+}
+#BlockV{
+    padding:0 0 50px;
+    position: relative;
+    display: flex;
+    top:100px;
+}
+.dialog{
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+   background-color: aliceblue;
+    z-index: 10000;
+    text-align: center;
+}
