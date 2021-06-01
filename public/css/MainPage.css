@@ -18,12 +18,13 @@ body
 }
 html
 {
-    height: 70%;
+    height:100%;
 }
 article
 {
+    position: relative;
+    top: 10%;
     margin:1% 0 0 4%;
-    height: 210%;
 }
 .home *
 {
@@ -37,7 +38,8 @@ article
 {
     position: fixed;
     top: 0%;
-    right: 40%;
+    right: 45%;
+    left: 45%;
     height: 10vh;
 }
 .png *
@@ -151,7 +153,7 @@ a {
     padding:0 0 50px;
     position: relative;
     display: flex;
-    top:100px;
+    top:7%;
 }
 .dialog{
     width: 80%;

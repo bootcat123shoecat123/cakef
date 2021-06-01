@@ -3,7 +3,7 @@
 use App\Http\Controllers\crud;
 use App\Http\Controllers\pageControll\mainPage;
 use App\Http\Controllers\product_infor;
-use App\Http\Controllers\productsImfoPage;
+use App\Http\Controllers\pageControll\productsImfoPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/page/sign', [productsImfoPage::class,"show"]);
+Route::get('/page/login', [productsImfoPage::class,"show"]);
 
 Route::get('/page/product/{PName}', [productsImfoPage::class,"show"]);
 Route::get('/', [mainPage::class,"show"]);

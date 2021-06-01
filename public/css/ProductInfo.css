@@ -6,7 +6,11 @@ html
 article
 {
     margin:0% 0 0 0%;
-    height: 122%;
+    top: 0%;
+    height: 120%;
+}
+body{
+    overflow-x: hidden;
 }
 #background{
     left: 0;
@@ -26,38 +30,49 @@ article
     position: absolute;
     top: 17%;
     left: 11%;
-    width: 1500px;
-    height: 2200px;
+    width: 78%;
+    height: 120%;
     background-color: white;
     border-radius: 20px;
 }
+.all *
+{
+    position:relative;
+    font-size: 3vh;
+}
 .m1
 {
-    position: absolute;
+    
+   
     top: 4%;
     left: 29%;
 }
 .m2
 {
+    width:47%;
+    height:47%;
     border-radius: 20px;
 }
 .m3
 {
+    
+   
     width: 1300px;
-    position: absolute;
-    top: 30%;
+    top: 5%;
     left: 6.8%;
-    font-size: 25px;
+    
     color: black;
     font-family:微軟正黑體;
 }
 .m4
 {
-    font-size: 30px;
+    font-size: 5vh;
     font-weight: bold;
 }
 .m5
 {
+    position:relative;
+    top: 2%;
     font-weight: bold;
 }
 .dialog{

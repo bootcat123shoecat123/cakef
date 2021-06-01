@@ -4,28 +4,16 @@
   <meta charset="UTF-8">
   <title>聽說tingshuoo</title>
   <link rel="stylesheet" href="{{$img->cssMain}}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.js"></script>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  
- </head>
- <body>
-  
-    <header>
-        <span class="home"><img src="{{$img->home}}" id="ls"></span>
-        <span class="center" ><a href=""><img src="{{$img->Title}}" ></a></span>
-        <span class="png" ><a href="https://www.instagram.com/tingshuoo" target="_blank"><img src="{{$img->IG}}" ></a></span>
-        <span class="pnge" ><a href="https://www.facebook.com/tingshuoo" target="_blank"> <img src="{{$img->FB}}"></a></span>
-    </header>
-    
+  @include('piece.titlePiece')
+  @yield('head')
      <article>
         <br>
         <!-- 當季熱賣區塊-->
-        <span class="fontsize2">當季熱賣</span>
+        <div class="fontsize2">當季熱賣</div>
         <br>
         <div id="BlockV">
             
-            @foreach($product as $name)
+            @foreach($productP as $name)
             
             <div class="big">
             <a href="/page/product/{{$name->PName}}">
@@ -36,7 +24,7 @@
                 </div>
             </div>
             
-            @if($count%4==0&& $count!=count($product))
+            @if($count%4==0&& $count!=count($productP))
                 </div>
                 <div id="BlockV">
                 <br>
@@ -46,7 +34,32 @@
             
            @endforeach
             </div>
+
         <span class="fontsize2">情人節必備</span>
+        <br>
+        <div id="BlockV">
+            
+            @foreach($productH as $name)
+            
+            <div class="big">
+            <a href="/page/product/{{$name->PName}}">
+                <img  src="/images/{{$name->Pic}}.jpg" width="400px" height="400px">
+            </a>
+            <br>
+                <div class="movie1"><a href="/page/product/{{$name->PName}}>">{{$name->PName}}</a>
+                </div>
+            </div>
+            
+            @if($count%4==0&& $count!=count($productH))
+                </div>
+                <div id="BlockV">
+                <br>
+            @endif 
+            
+           <input type="hidden" value="{{$count++}}">
+            
+           @endforeach
+            </div>
 <!-- 產品的呈現模板
         
     
@@ -61,9 +74,9 @@ if(isset($_SESSION["account"])){?>
 <input type='button' value='login' />
 ?php
 }
-?> --> 
+?> --> </div> 
 </article>
-  </div> 
+  
      <br>
      <br>
      <br>
@@ -76,7 +89,7 @@ if(isset($_SESSION["account"])){?>
         <a href="https://zh.wikipedia.org/wiki/HTTP_404">常見問題</a></div>
   
        <div class="u1">Copyright&nbsp;&copy;&nbsp;2021 tingshuoo. All Right Reserved</div>
-       
+        </footer>
        <br>
        <button type="button" id="BackTop" class="toTop-arrow" ></button>
             <script>
@@ -100,7 +113,6 @@ if(isset($_SESSION["account"])){?>
             });
             </script>
       
-    </footer>
-     
+   
  </body>
 </html>
