@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class signModel extends Model
 {
     use HasFactory;
+    
     protected $table = 'member';
     protected $primaryKey = 'Account';
     protected $keyType = 'string';

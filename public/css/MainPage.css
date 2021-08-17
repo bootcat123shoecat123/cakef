@@ -7,7 +7,7 @@ header
     top: 0;
     height: 12%;
     width: 100%;
-    z-index: 1000;
+    z-index: 9998;
 }
 body
 {
@@ -23,79 +23,80 @@ html
 article
 {
     position: relative;
-    top: 10%;
+   
     margin:1% 0 0 4%;
 }
-.home *
+.home
 {
     position: fixed;
+    text-align: center;
+    line-height: 100%;
+    margin: auto;
+    font: 10%;
     top: 1.5%;
     left: 4%;
     height: 10vh;
-    width: 10vh;
+    width: 18vw;
+    justify-items: center;
 }
+.home *
+{
+    border: #45656b solid 1px;
+    border-radius: 20px;
+    float: left;
+    text-align: center;
+    line-height: 100%;
+    margin: auto;
+    font: 10%;
+    top: 1.5%;
+    left: 4%;
+    height: 5vh;
+    width: 8vw;
+}
+
 .center *
 {
     position: fixed;
     top: 0%;
-    right: 45%;
-    left: 45%;
+    text-align: center;
+    
+    left: 40%;
+    
+    width:19vw;
     height: 10vh;
+}
+.cart *
+{
+    position: fixed;
+    top: 2%;
+    right: 18vw;
+    height: 9%;
+}
+.member *
+{
+    position: fixed;
+    top: 2%;
+    left: 18vw;
+    height: 9%;
 }
 .png *
 {
     position: fixed;
-    top: 2%;
-    right: 4%;
-    height: 10vh;
+    top: 1.5%;
+    right: 4vw;
+    height: 4.6vw;
 }
 .pnge *
 {
     position: fixed;
-    top: 2%;
-    right: 10%;
-    height: 10vh;
+    top: 1.5%;
+    right: 10vw;
+    height: 4.6vw;
 }
-.big
-{
-    overflow: hidden;
-    margin:0 3% 0 0;
-}
-.big img
-{
-    max-height:400px;
-    margin:0 0 3% 0;
-    transition: 0.5s; 
-}
-
-.movie1
-{
-    width:calc(400px+3%);
-    margin:0 0 3% 0%;
-    font-size: 30px;
-    color: white;
-    font-family:微軟正黑體;
-}
-.big img:hover
-{
-    transform: scale(1.1,1.1);
-}
-
-.fontsize2
-{
-    
-    display: block;
-    font-size: 40px;
-    color: white;
-    font-family:微軟正黑體;
-    position: relative;
-    top: 7%;
-}
-
-
 
 .u1
 {
+    position: relative;
     font-size: 20px;
     color: white;
     font-family:微軟正黑體;
@@ -103,7 +104,7 @@ article
 }
 
 /* 40px */
-.toTop-arrow {
+.theToTop-arrowA {
 	width: 4rem;
 	height: 4rem;
 	padding: 0;
@@ -118,7 +119,7 @@ article
 	bottom: 1rem;
 	display: none;
 }
-.toTop-arrow::before, .toTop-arrow::after {
+.theToTop-arrowA::before, .theToTop-arrowA::after {
 	width: 22px;
 	height: 5px;
 	border-radius: 3px;
@@ -126,15 +127,15 @@ article
 	position: absolute;
 	content: "";
 }
-.toTop-arrow::before {
+.theToTop-arrowA::before {
 	transform: rotate(-45deg) translate(0, -50%);
 	left: 1rem;
 }
-.toTop-arrow::after {
+.theToTop-arrowA::after {
 	transform: rotate(45deg) translate(0, -50%);
 	right: 1rem;
 }
-.toTop-arrow:focus {outline: none;}
+.theToTop-arrowA:focus {outline: none;}
 
 a:link{
     color: white;
@@ -149,12 +150,7 @@ a:hover
 a {
     text-decoration:none;
 }
-#BlockV{
-    padding:0 0 50px;
-    position: relative;
-    display: flex;
-    top:7%;
-}
+
 .dialog{
     width: 80%;
     height: 80%;

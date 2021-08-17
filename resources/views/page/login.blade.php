@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php session_start();
-    include("../sc/connect.php");
-    ?>
+    <title>login</title>
+    
+<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
+
+<script src="{{asset('js/jquery-1.11.0.min.js')}}"></script> 
+<script src="{{asset('js/bootstrap.min.js')}}"></script> 
 </head>
 <body>
-    <div class="sign">
-      <form action="login.php" method="post" >
-          輸入帳號:<input type="text" name="user"><br>
-          輸入密碼:<input type="password" name="password"><br>
-          <input type="submit" name="sign" value="register">
-      </form>
-    </div>
+    <div class="container">
+        <div class="row">
+         <div class="col-md-6 col-md-offset-3" >
+           <div class="panel panel-primary">
+             <div class="panel-heading">
+               <b><h2>Login</h2></b>
+             </div>
+             <div class="panel-body">
+               <form class="form-signin" role="form" action="{{url("/login")}}" method="post">
+                {{ csrf_field() }}
+                 <label for="inputEmail" class="sr-only">Account</label>
+                 <input type="text" id="inputEmail" class="form-control" placeholder="Account" required="" autofocus=""  name="user">
+                 <label for="inputPassword" class="sr-only">Password</label>
+                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="password">
+                 <br>
+                 <div class="list-group">
+                   <a href="/page/sign" class="list-group-item list-group-item-info">新會員註冊</a>
+                 </div>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              </form>
+             </div>
+           </div>
+         </div>
+        </div>
+     </div>
+    @if(@isset($messsage))
+<div class="alert alert-danger">{{$message}}</div>
+@endif
     
-    <a href="../page/sign.php">尚未註冊?</a>
-    <?php
-    if(isset($_POST["sign"])&& $_POST["user"]!=""&& $_POST["password"]!=""){
-        
-        $account=$_POST["user"];        
-        $password=$_POST["password"];
-        $sql='SELECT account from member where account='."$account".'AND password='."$password";
-        $result=mysqli_query($link,$sql);
-
-        if($result){
-            echo("帳號或密碼正確");
-            $row=mysqli_fetch_row($result);
-            $_SESSION["account"]=$row[0];
-            sleep(1);
-            //echo("<script>window.location.href='../page/tingshuoo.php'</script>");
-        }else{
-            echo("帳號或密碼不正確");
-        }
-    }
-    ?>
 </body>
 </html>

@@ -1,0 +1,93 @@
+header 
+{
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+    top: 0;
+    height: 12%;
+    width: 100%;
+    z-index: 9999999999;
+}
+body
+{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #45656b;
+}
+
+html
+{
+    height: 135%;
+}
+article
+{
+    height: 150%;
+}
+.big
+{
+
+    float:left;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 18%;
+    left: 4%;
+}
+.hr
+{
+    position: absolute;
+    top: 23%;
+    left: 37%;
+    width: 30cm;
+   
+    
+    font-family: 微軟正黑體;
+    color: white;
+}
+.movie5
+{
+    font-size: 20px;
+    color: white;
+    font-family:微軟正黑體;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+}
+.text1 {
+    text-align: center;
+    font-size: 1.2cm ;
+    font-family: 微軟正黑體;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+}
+.text1-1 {
+    text-align: center;
+    font-size: 1.2cm ;
+    font-family: 微軟正黑體;
+    color: white;
+    position: absolute;
+    top: 23%;
+    left: 40%;
+}
+.text2 {
+    position: absolute;
+    width: 1200px;
+    font-size: 0.65cm ;
+    font-family: 微軟正黑體;
+    text-align: justify;
+    top: 40%;
+    left: 37%;
+    color: white;
+}
+.text3 {
+    position: absolute;
+    top: 115%;
+    font-size: 0.8cm ;
+    font-family: 微軟正黑體;
+    left: 10%;
+    color: white;
+}

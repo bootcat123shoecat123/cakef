@@ -11,4 +11,10 @@ class memberModel extends Model
     protected $table = 'member';
     protected $primaryKey = 'Account';
     protected $keyType = 'string';
+    protected $fillable = [
+        'Password',
+        'Email',
+        'Tel',
+        'Name'
+    ];
 }

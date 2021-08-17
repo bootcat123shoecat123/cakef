@@ -1,0 +1,44 @@
+article{
+    top: 10%;
+}
+.big
+{
+    overflow: hidden;
+    margin:0 3% 0 0;
+}
+.big img
+{
+    max-height:400px;
+    margin:0 0 3% 0;
+    transition: 0.5s; 
+}
+
+.movie1
+{
+    width:calc(400px+3%);
+    margin:0 0 3% 0%;
+    font-size: 30px;
+    color: white;
+    font-family:微軟正黑體;
+}
+.big img:hover
+{
+    transform: scale(1.1,1.1);
+}
+
+.fontsize2
+{
+    
+    display: block;
+    font-size: 40px;
+    color: white;
+    font-family:微軟正黑體;
+    position: relative;
+    top: 7%;
+}
+#BlockV{
+    padding:0 0 50px;
+    position: relative;
+    display: flex;
+    top:7%;
+}

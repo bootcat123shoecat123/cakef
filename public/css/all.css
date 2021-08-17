@@ -1,0 +1,22 @@
+.topBlock{
+   
+    position: relative;
+    padding: 14px;
+top:12%;
+height: 70%;
+background-color: rgba(102, 187, 140, 0.795);
+border-radius: 20px;
+}
+.UPform *{
+    font-size: 2vh;
+}
+.inputC{
+    border-radius: 20px;
+}
+a{
+
+}
+a:link{
+    color: rgb(137, 199, 146);
+    
+}
